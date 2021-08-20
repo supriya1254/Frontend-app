@@ -86,28 +86,28 @@ class App extends React.Component {
         <form onSubmit={(e)=>this.submit(e,this.state.taskId)}>
         <div className="input-field col s12">
           <i className="material-icons prefix">person</i>
-          <input onChange={(e)=>this.setState({taskName:e.target.value})} value={this.state.taskName} type="text" id="autocomplete-input" class="autocomplete" />
-          <label for="autocomplete-input">Autocomplete</label>
+          <input onChange={(e)=>this.setState({taskName:e.target.value})} value={this.state.taskName} type="text" id="autocomplete-input" className="autocomplete" />
+          <label htmlFor="autocomplete-input">Autocomplete</label>
         </div>
         <div className="input-field col s12">
           <i className="material-icons prefix">access_time</i>
-          <input onChange={(e)=>this.setState({timeSpentOnTask:e.target.value})} value={this.state.timeSpentOnTask} type="text" id="autocomplete-input" class="autocomplete" />
-          <label for="autocomplete-input">TimeSpentOnTask</label>
+          <input onChange={(e)=>this.setState({timeSpentOnTask:e.target.value})} value={this.state.timeSpentOnTask} type="text" id="autocomplete-input" className="autocomplete" />
+          <label htmlFor="autocomplete-input">TimeSpentOnTask</label>
         </div>
         <div className="input-field col s12">
           <i className="material-icons prefix">group</i>
-          <input onChange={(e)=>this.setState({taskGroup:e.target.value})} value={this.state.taskGroup} type="text" id="autocomplete-input" class="autocomplete" />
-          <label for="autocomplete-input">TaskGroup</label>
+          <input onChange={(e)=>this.setState({taskGroup:e.target.value})} value={this.state.taskGroup} type="text" id="autocomplete-input" className="autocomplete" />
+          <label htmlFor="autocomplete-input">TaskGroup</label>
         </div>
         <div className="input-field col s12">
           <i className="material-icons prefix">person</i>
-          <input onChange={(e)=>this.setState({assignee:e.target.value})} value={this.state.assignee} type="text" id="autocomplete-input" class="autocomplete" />
-          <label for="autocomplete-input">Assignee</label>
+          <input onChange={(e)=>this.setState({assignee:e.target.value})} value={this.state.assignee} type="text" id="autocomplete-input" className="autocomplete" />
+          <label htmlFor="autocomplete-input">Assignee</label>
         </div>
         <div className="input-field col s12">
           <i className="material-icons prefix">check_circle</i>
-          <input onChange={(e)=>this.setState({status:e.target.value})} value={this.state.status} type="text" id="autocomplete-input" class="autocomplete" />
-          <label for="autocomplete-input">Status</label>
+          <input onChange={(e)=>this.setState({status:e.target.value})} value={this.state.status} type="text" id="autocomplete-input" className="autocomplete" />
+          <label htmlFor="autocomplete-input">Status</label>
         </div>
 
         <button className="btn waves-effect waves-light right" type="submit" name="action">Submit
@@ -141,12 +141,12 @@ class App extends React.Component {
                 <td>{task.assignee}</td>
                 <td>{task.status}</td>
                 <td>
-                <button onClick={(e)=>this.edit(task.taskId)} class="btn waves-effect waves-light" type="submit" name="action">
+                <button onClick={(e)=>this.edit(task.taskId)} className="btn waves-effect waves-light" type="submit" name="action">
                   <i className="material-icons">edit</i>
                 </button>
                 </td>
                 <td>
-                <button onClick={(e)=>this.delete(task.taskId)} class="btn waves-effect waves-light" type="submit" name="action">
+                <button onClick={(e)=>this.delete(task.taskId)} className="btn waves-effect waves-light" type="submit" name="action">
                   <i className="material-icons">delete</i>
                 </button>
                 </td>
